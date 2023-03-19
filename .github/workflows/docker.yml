@@ -1,0 +1,15 @@
+name: My Docker Workflow
+on: [push]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Install Docker
+        run: |
+          brew update
+          brew install docker
+      - name: Build and push Docker image
+        run: |
+          docker build -t myimage:latest .
+          docker push myimage:latest
