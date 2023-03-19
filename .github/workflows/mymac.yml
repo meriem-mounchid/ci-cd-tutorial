@@ -1,4 +1,4 @@
-name: My Mac Workflow
+name: My Mac Workflow 
 
 on: push
 jobs:
