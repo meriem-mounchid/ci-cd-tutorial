@@ -1,10 +1,10 @@
-name: My Mac Workflow 
+name: My Mac Workflow
 
 on: push
 jobs:
   first-job:
     runs-on: macOS-latest
-    container: node:17.6.0
+    # container: node:17.6.0
     steps:
       - run: npm --version
       - run: node --version
