@@ -1,0 +1,9 @@
+name: My Mac Workflow
+
+on: push
+jobs:
+  first-job:
+    runs-on: macOS-latest
+    steps:
+      - run: npm --version
+      - run: node --version
