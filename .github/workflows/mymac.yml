@@ -2,7 +2,7 @@ name: My Mac Workflow
 
 on: push
 jobs:
-  first-job:
+  build-node:
     runs-on: ubuntu-latest
     container: node:14
     steps:
