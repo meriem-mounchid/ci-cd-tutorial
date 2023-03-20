@@ -11,4 +11,4 @@ jobs:
           brew install docker
       - name: Build and push Docker image
         run: |
-          docker build -d  hello-world:latest 
+          docker run hello-world
