@@ -3,7 +3,8 @@ name: My Mac Workflow
 on: push
 jobs:
   first-job:
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
+    container: node:14
     steps:
       - run: npm --version
       - run: node --version
