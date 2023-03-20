@@ -12,6 +12,10 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get upgrade -y
+      - name: Remove docker
+        run: |
+          sudo apt-get remove moby-containerd containerd moby-runc runc
+          sudo apt-get autoremove
       - name: Install Docker
         run: |
           sudo apt-get install -y docker.io
