@@ -5,7 +5,7 @@ jobs:
   build:
     runs-on: macos-latest
     steps:
-      - name: Install Docker
+      - name: Update brew
         run: |
           brew update
       - name: Build and push Docker image
