@@ -8,7 +8,6 @@ jobs:
       - name: Install Docker
         run: |
           brew update
-          brew install docker
       - name: Build and push Docker image
         run: |
           docker run hello-world:latest
