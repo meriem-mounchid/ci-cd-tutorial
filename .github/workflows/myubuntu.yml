@@ -4,11 +4,17 @@ on: [push]
 
 jobs:
   build-node:
+    name: Build and run Node project
     runs-on: ubuntu-latest
     container: node:14
     steps:
       - uses: actions/checkout@v2
+        name: Checkout code from Github
       - run: npm --version
+        name: cheek npm version
       - run: node --version
+        name: cheek node version
       - run: npm install
+        name: Install npm packages
       - run: node app.js
+        name: Run node application
