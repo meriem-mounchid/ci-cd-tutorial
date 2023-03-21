@@ -7,6 +7,8 @@ brew install node
 npm install -g grunt-cli
 npm -v
 node -v
+npm install moment
+
 
 ### App ###
 npm install --save moment
