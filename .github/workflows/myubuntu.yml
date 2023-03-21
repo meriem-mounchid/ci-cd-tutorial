@@ -1,15 +1,17 @@
-name: My Mac Workflow
+name: My npm-node.js Workflow
 
-on: push
+on: [push]
+
 jobs:
   build-node:
     runs-on: ubuntu-latest
     container: node:14
     steps:
       - uses: actions/checkout@v2
-      - run: sudo apt-get update
-      - run: sudo apt-get upgrade -y
-      - run: sudo apt install nodejs npm
+      # - run: sudo apt-get update
+      # - run: sudo apt-get upgrade -y
+      # - run: sudo apt install nodejs npm
       - run: npm --version
       - run: node --version
+      - run: npm install
       - run: node app.js
