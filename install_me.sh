@@ -5,3 +5,5 @@ brew link --overwrite docker
 export PATH="/usr/local/bin:$PATH"
 brew install node
 npm install -g grunt-cli
+npm -v
+node -v
