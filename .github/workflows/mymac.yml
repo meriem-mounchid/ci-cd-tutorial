@@ -8,3 +8,5 @@ jobs:
     steps:
       - run: npm --version
       - run: node --version
+      - uses: actions/checkout@v2
+      - run: node app.js
