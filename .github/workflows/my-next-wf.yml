@@ -12,4 +12,4 @@ jobs:
       - name: Install npm packages
         run: npm install
       - name: Build project assets
-        run: npm run build
+        run: npm run
